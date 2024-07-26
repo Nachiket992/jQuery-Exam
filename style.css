@@ -1,0 +1,105 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url("./img/wallpaperflare.com_wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+#main {
+    height: 100vh;
+    width: 100vw;
+}
+
+#navbar {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar_box {
+    height: 64px;
+    width: 98.58vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+#text {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cb273d;
+    font-size: 35px;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+#options {
+    height: 45px;
+    width: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+@media (max-width: 851px) {
+    #options {
+        display: none;
+    }
+}
+
+.choices {
+    height: 35px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f15b42;
+    font-size: 14px;
+    font-weight: bold;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.choices > p{
+    margin-left: 8px;
+}
+
+.choices:hover {
+    margin-top: 2px;
+    border-bottom: 2px solid #f15b42;
+}
+
+#hamburger {
+    height: 100%;
+    width: 64px;
+    padding: 1rem;
+}
+
+@media (min-width: 852px) {
+    #hamburger {
+        display: none;
+    }
+}
+
+#sidebar {
+    height: 100vh;
+    width: 255px;
+
+}
