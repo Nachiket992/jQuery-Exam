@@ -41,30 +41,43 @@
                 </div>
             </div>
         </nav>
-        <div id="sidebar">
-            <ul id="side_options">
-                <li class="side_choices">
+        <div class="menu">
+            <ul class="hamburger_menu">
+                <li class="hamburger_choices">
                     <i class="fa-solid fa-house" style="color: #f15b42; font-size: 15px;"></i>
                     <p>Home</p>
                 </li>
-                <li class="side_choices">
+                <li class="hamburger_choices">
                     <i class="fa-solid fa-chart-line" style="color: #f15b45; font-size: 15px;"></i>
                     <p>Dashboards</p>
                 </li>
-                <li class="side_choices">
+                <li class="hamburger_choices">
                     <i class="fa-solid fa-user-group" style="color: #f15b45; font-size: 15px;"></i>
                     <p>Segment</p>
                 </li>
-                <li class="side_choices">
+                <li class="hamburger_choices">
                     <i class="fa-solid fa-address-card" style="color: #f15b45; font-size: 15px;"></i>
                     <p>Accouont</p>
                 </li>
-                <li class="side_choices">
+                <li class="hamburger_choices">
                     <i class="fa-solid fa-gear" style="color: #f15b45;"></i>
                     <p>Settings</p>
                 </li>
             </ul>
         </div>
     </div>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('#hamburger').click(function(){
+                $('.menu').toggle(1000);
+            });
+
+        });
+
+    </script>
+
 </body>
 </html>
